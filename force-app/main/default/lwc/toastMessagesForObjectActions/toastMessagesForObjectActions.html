@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Toast Messages for Different Objects">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Create Case" onclick={createRecordHandler} data-object="Case"></lightning-button>
+            <lightning-button label="Update Case" onclick={updateRecordHandler} data-object="Case"></lightning-button>
+            <lightning-button label="Delete Case" onclick={deleteRecordHandler} data-object="Case"></lightning-button>
+            <lightning-button label="Create Opportunity" onclick={createRecordHandler} data-object="Opportunity"></lightning-button>
+            <lightning-button label="Update Opportunity" onclick={updateRecordHandler} data-object="Opportunity"></lightning-button>
+            <lightning-button label="Delete Opportunity" onclick={deleteRecordHandler} data-object="Opportunity"></lightning-button>
+        </div>
+    </lightning-card>
+</template>
