@@ -1,0 +1,16 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Contact List">
+        <lightning-datatable
+            key-field="Id"
+            data={Contacts.data}
+            columns={columns}
+           >
+        </lightning-datatable>
+        <template if:true={errors}>
+            <p>{errors}</p>
+        </template>
+    </lightning-card>
+</template>

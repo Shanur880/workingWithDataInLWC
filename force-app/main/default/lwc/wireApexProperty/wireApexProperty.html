@@ -1,0 +1,19 @@
+<template>
+    <!-- Displaying contacts fetched from Apex method -->
+    <lightning-card title="Contacts Born After">
+        <div class="slds-m-around_medium">
+            <template if:true={contacts.data}>
+                <ul class="slds-list_ordered">
+                    <template for:each={contacts.data} for:item="contact">
+                        <li key={contact.Id}>
+                            {contact.Name}, {contact.Birthdate}
+                        </li>
+                    </template>
+                </ul>
+            </template>
+            <template if:true={contacts.error}>
+                <p>Error fetching contacts</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
